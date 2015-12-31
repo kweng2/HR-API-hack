@@ -5,9 +5,9 @@ var router = require('./router.js');
 
 var app = express();
 var port = process.env.PORT || 8000;
+var dbUri = process.env.MONGOLAB_URI || 'mongodb://localhost/myApp';
 
-
-mongoose.connect('mongodb://localhost/myApp');
+mongoose.connect(dbUri);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
