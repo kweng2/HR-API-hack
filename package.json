@@ -7,7 +7,7 @@
     "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
-  "author": "Zachary Lester",
+  "author": "Zilu Weng",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.2",
